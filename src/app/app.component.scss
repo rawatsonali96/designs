@@ -1,0 +1,247 @@
+.header-logo {
+  margin-left: 16px;
+  float: left;
+}
+
+.nav-link {
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+}
+
+.btn-login {
+  top: 63px;
+  left: 1480px;
+  width: 118px;
+  height: 45px;
+  box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  opacity: 1;
+  margin-right: 4px;
+}
+
+.btn-login:hover{
+  background-color: purple;
+  color: white;
+}
+
+.btn-get-started {
+  top: 63px;
+  left: 1622px;
+  width: 166px;
+  height: 45px;
+  background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.btn-get-started:hover{
+  background-color: purple;
+  color: white;
+}
+
+.d-grid {
+  float: right;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.header-nav {
+  margin: 8px;
+  display: inline;
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.header-nav:hover{
+  color: purple;
+}
+
+.body {
+  margin-top: 60px;
+}
+
+.tag-img {
+  width: 491px;
+  height: 267px;
+  margin-top: 64px;
+}
+
+.tag-line {
+  font-size: 40px;
+}
+
+hr {
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 0.7;
+  width: 236px;
+  height: 3px;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+.ngx-slider {
+  background: orange;
+}
+
+.btn-secondary {
+  font-size: 20px;
+  text-align: initial;
+  background-color: white;
+  border: none;
+  width: 100%;
+  color: black;
+  border-bottom: 2px solid #d8e0f3;
+}
+
+.form-switch,
+.form-check {
+  padding-left: 0px !important;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #d8e0f3;
+}
+
+.card-aside {
+  color: white;
+  background-color: #9f62c9;
+  margin-top: 90px;
+  height: 364px;
+  width: 188px;
+  border-radius: 10px;
+  background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000033;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 2px;
+}
+
+.card-aside-loan {
+  margin-left: 48px;
+  margin-top: 91px;
+}
+
+.card-aside-emi {
+  margin-left: 48px;
+}
+
+.card-aside-btn {
+  color: purple;
+  background-color: white;
+  margin-left: 33px;
+}
+
+.card-aside-btn:hover {
+  color: white;
+  background-color: #663399;
+}
+
+.cash-disemburement {
+  box-shadow: 0px 0px 30px #2321321f;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin-left: 102px;
+  width: 218px;
+}
+
+.cash-disemburement:hover {
+  background-color: #deb5e6
+}
+
+.btn-open-account {
+  height: 45px;
+  box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  opacity: 1;
+  margin-right: 4px;
+  margin-left: 218px;
+  display: block;
+  margin-top: 37px;
+  color: #663399;
+}
+
+.btn-open-account:hover {
+  color: white;
+  background-color: #663399;
+}
+
+.cash-disemburement {
+  height: 253px;
+  width: 391px;
+  border-radius: 10px;
+}
+
+.img-cash-disemburement {
+  margin-top: 49px;
+  margin-left: 54px;
+  width: 89px;
+  height: 89px;
+}
+
+.label-cash-disemburement {
+  margin-left: 54px;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.p-cash-disemburement {
+  margin-right: 54px;
+  margin-left: 54px;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.body{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.demo{
+  background: url('../assets/images/circle.svg') no-repeat;
+}

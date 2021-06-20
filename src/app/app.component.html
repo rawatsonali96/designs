@@ -1,21 +1,155 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="demo">
+  <div class="header" style="display: flex;">
+      <div class="header-logo">
+          <img src="../assets/images/logo.png">
+      </div>
+      <div style=" margin-right: 8px;padding-top: 19px;width: fit-content;padding-left: 760px;">
+        <span class="header-nav">Products</span>
+        <span class="header-nav">Solutions</span>
+        <span class="header-nav">Pricing</span>
+      </div>
+      <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-login" type="button">Login</button>
+          <button class="btn btn-get-started" type="button">Get Started</button>
+      </div>
+  </div>
+  <div class="body row">
+    <div class="col">
+        <div style="margin-left: 100px;">
+            <span class="tag-line">
+                We make it Super
+                <br>
+                Simple
+            </span>
+            <hr>
+        </div>
+        <div style="margin-left: 80px;">
+            <img class="tag-img" src="../assets/images/collect_img-video.png">
+        </div>
+    </div>
+    <div class="col body-section" style="display: flex">
+        <div class="card" style="width:352px;border-radius:10px">
+            <h5 class="card-header" style="text-align: center;font-weight: 400;">Eligibility Criteria</h5>
+            <div class="card-body">
+                <div style="margin-top: 16px;">
+                    <h5 style="font-weight: 200;font-size: 12px;">Monthly Income</h5>
+                    <h5 style="font-weight: 500;">&#8377;{{incomeValue}}</h5>
+                    <ngx-slider [(value)]="incomeValue" [options]="incomeOptions"></ngx-slider>
+                    <small id="emailHelp" class="form-text text-muted">&#8377;100000</small>
+                    <small id="emailHelp" class="form-text text-muted" style="float: right;">&#8377;300000</small>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h5 style="font-weight: 200;font-size: 12px;">Monthly Expense</h5>
+                    <h5 style="font-weight: 500;">&#8377;{{expenseValue}}</h5>
+                    <ngx-slider [(value)]="expenseValue" [options]="expenseOptions"></ngx-slider>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h5 style="font-weight: 200;font-size: 12px;">Replayment Tenure</h5>
+                    <div class="dropdown">
+                        <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="font-weight: 500;"
+                        >
+                            6 months
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">2 month</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">4 month</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Do you have any existing loans?</label>
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckChecked"
+                            checked
+                            style="float: right;"
+                        >
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" style="font-weight: 200;font-size: 16px;">EMI of existing loan(optional)</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputText"
+                                aria-describedby="textHelp"
+                                placeholder="&#8377;15,000"
+                            >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card card-aside" style="border-radius:10px">
+          <div class="card-aside-loan">
+            <h5 style="font-weight: 200;font-size: 12px;">Loan Amount</h5>
+            <h5 style="font-weight: 500;">&#8377;1,00,000</h5>
+          </div>
+          <div class="card-aside-emi">
+            <h5 style="font-weight: 200;font-size: 12px;">Loan Amount</h5>
+            <h5 style="font-weight: 500;">&#8377;50,000</h5>
+          </div>
+          <button class="btn btn-login card-aside-btn" type="button">Get Money</button>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 182px;">
+      <div class="col" style="display: flex;">
+        <div style="display: inline;">
+          <div class="card cash-disemburement" style="border-radius:32px;margin-top:48px">
+            <img class="img-cash-disemburement" src ="../assets/images/Get Paid Instantly.png">
+            <label class="label-cash-disemburement" >Quick cash disbursement</label>
+            <p class="p-cash-disemburement" style="font-weight: 100;font-size: 16px;">Get terms loans that your business needs within 72 hrs</p>
+          </div>
+          <div class="card cash-disemburement" style="border-radius:32px;margin-top:48px">
+            <img class="img-cash-disemburement" src ="../assets/images/Get Paid Instantly.png">
+            <label class="label-cash-disemburement" >Low-interest rate</label>
+            <p class="p-cash-disemburement" style="font-weight: 100;font-size: 16px;">Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+          </div>
+          <div class="card cash-disemburement" style="border-radius:32px;margin-top:48px">
+            <img class="img-cash-disemburement" src ="../assets/images/Get Paid Instantly.png">
+            <label class="label-cash-disemburement" >Zero Paperwork</label>
+            <p class="p-cash-disemburement" style="font-weight: 100;font-size: 16px;">Get started instantly by submitting only your basic details & bank statements</p>
+          </div>
+        </div>
+        <div style="float: right;">
+          <div class="card cash-disemburement" style="border-radius:32px;margin-top:104px">
+            <img class="img-cash-disemburement" src ="../assets/images/Get Paid Instantly.png">
+            <label class="label-cash-disemburement" >Ace your business finances</label>
+            <p class="p-cash-disemburement" style="font-weight: 100;font-size: 16px;">Manage banking, accounting & everything in between, on one platform</p>
+          </div>
+          <div class="card cash-disemburement" style="border-radius:32px;margin-top:48px">
+            <img class="img-cash-disemburement" src ="../assets/images/Get Paid Instantly.png">
+            <label class="label-cash-disemburement" >Loans to fight COVID-19</label>
+            <p class="p-cash-disemburement" style="font-weight: 100;font-size: 16px;">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div style="margin-left: 100px;">
+          <span class="tag-line">
+            Boost your business 
+              <br>
+              with Open
+          </span>
+          <hr>
+      </div>
+      <label style="margin-left: 100px;">Get your hands on a term loan that’s crafted for your business</label>
+      <button class="btn btn-open-account" type="button">Get an Open Account</button>
+      </div>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
